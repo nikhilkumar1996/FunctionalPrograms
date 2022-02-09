@@ -14,7 +14,8 @@ namespace FunctionalPrograms
             Console.WriteLine(  "1)2D Array" +
                               "\n2)Euclidean Distance" +
                               "\n3)Quadratic Equation" +
-                              "\n4)Exit");
+                              "\n4)Sum Of Integers" +
+                              "\n5)Exit");
             
             bool flag = true;
             while (flag)
@@ -39,6 +40,11 @@ namespace FunctionalPrograms
                         break;
 
                     case 4:
+                        IntegerSum integerSum = new IntegerSum();
+                        integerSum.SumEqualToZero(5);
+                        break;
+
+                    case 5:
                         flag= false;
                         break;
 
