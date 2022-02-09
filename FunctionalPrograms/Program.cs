@@ -15,7 +15,8 @@ namespace FunctionalPrograms
                               "\n2)Euclidean Distance" +
                               "\n3)Quadratic Equation" +
                               "\n4)Sum Of Integers" +
-                              "\n5)Exit");
+                              "\n5)Wind Chill" +
+                              "\n6)Exit");
             
             bool flag = true;
             while (flag)
@@ -45,6 +46,11 @@ namespace FunctionalPrograms
                         break;
 
                     case 5:
+                        double a = WindChill.Temperature();
+                        Console.WriteLine(a);
+                        break;
+
+                    case 6:
                         flag= false;
                         break;
 
