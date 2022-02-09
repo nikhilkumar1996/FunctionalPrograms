@@ -12,7 +12,8 @@ namespace FunctionalPrograms
         {
             Console.WriteLine("Welcome to Functional Programs");
             Console.WriteLine(  "1)2D Array" +
-                              "\n2)Exit");
+                              "\n2)Euclidean Distance" +
+                              "\n3)Exit");
             
             bool flag = true;
             while (flag)
@@ -27,6 +28,11 @@ namespace FunctionalPrograms
                         break;
 
                     case 2:
+                        EuclideanDistance euclideanDistance = new EuclideanDistance();
+                        euclideanDistance.Distance();
+                        break;
+
+                    case 3:
                         flag= false;
                         break;
 

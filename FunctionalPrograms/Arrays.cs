@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FunctionalPrograms
 {
-    public class Arrays
+    public class Arrays 
     {
         public void TwoDimensionalArray()
         {
@@ -19,30 +19,30 @@ namespace FunctionalPrograms
             //creating Array-1d
             Console.WriteLine("Enter values:");
             int[] onedimensionalarray = new int[r * c];
-            for (int i = 0; i < onedimensionalarray.Length; i++)
+            for(int i=0;i<onedimensionalarray.Length;i++)
             {
-                onedimensionalarray[i] = Convert.ToInt32(Console.ReadLine());
+                 onedimensionalarray[i] = Convert.ToInt32(Console.ReadLine());
             }
             //creating Array-2d
-            int index = 0;
+            int index=0;
             int[,] twodimensionalarray = new int[r, c];
-            for (int j = 0; j < r; j++)
+            for (int j = 0; j <r; j++)
             {
-                for (int k = 0; k < c; k++)
+                for(int k = 0; k <c; k++)
                 {
                     twodimensionalarray[j, k] = onedimensionalarray[index];
                     index++;
 
                 }
-
+                
             }
-
+            
             Console.WriteLine("2d array elements");
-            foreach (int item in twodimensionalarray)
+            foreach(int item in twodimensionalarray)
             {
                 Console.WriteLine(item + " ");
             }
-
+            
 
 
         }
