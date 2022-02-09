@@ -13,7 +13,8 @@ namespace FunctionalPrograms
             Console.WriteLine("Welcome to Functional Programs");
             Console.WriteLine(  "1)2D Array" +
                               "\n2)Euclidean Distance" +
-                              "\n3)Exit");
+                              "\n3)Quadratic Equation" +
+                              "\n4)Exit");
             
             bool flag = true;
             while (flag)
@@ -33,6 +34,11 @@ namespace FunctionalPrograms
                         break;
 
                     case 3:
+                        QuadraticEquation equation = new QuadraticEquation();
+                        equation.Quadratic();
+                        break;
+
+                    case 4:
                         flag= false;
                         break;
 
